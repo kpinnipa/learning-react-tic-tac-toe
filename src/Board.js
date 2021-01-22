@@ -28,7 +28,7 @@ export default function Board() {
 
   return (
     <div>
-      <div className="status" onClick={() => setSquares("X")}>{status}</div>
+      <div className="status">{`Next player: ${xIsNext ? 'X' : 'O'}`}</div>
       {
         winner ? <Banner name={winner} /> : null
       }
